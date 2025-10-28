@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Games</title>
   <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
+
 </head>
 <body>
   <style>
@@ -62,10 +67,16 @@
     .slide.active {opacity:1;}
 
     .content {
+      position: absolute;
+      right: 60%;
+      top: 25%;
       margin-left:10%;
       color:#fff;
       z-index:10;
-      max-width:500px;
+      max-width:800px;
+      backdrop-filter: blur(4px);
+      border-radius: 50px;
+      
     }
     .content h1 {font-size:48px; margin-bottom:20px;}
     .content p {font-size:18px; margin-bottom:20px;}
@@ -113,8 +124,8 @@
       will-change: transform;
 }
     .thumbnails img {
-      width:80px;
-      height:60px;
+      width:100px;
+      height:150px;
       object-fit:cover;
       cursor:pointer;
       opacity:0.7;
@@ -137,8 +148,8 @@
 
     .thumb-arrows {
       position:absolute;
-      top:80%;
-      right:120px;
+      top:85%;
+      right:30%;
       transform:translateY(-50%);
       display:flex;
       flex-direction:row;
@@ -146,16 +157,26 @@
       z-index:20;
     }
     .thumb-arrows button {
-      background:rgba(0,0,0,0.6);
-      border:none;
-      color:#fff;
-      font-size:20px;
-      padding:8px;
-      cursor:pointer;
-      border-radius:50%;
-      transition:0.3s;
+      border: none;
+      color: #000000;
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(255, 255, 255);
     }
-    .thumb-arrows button:hover {background:#ff6600;}
+    .thumb-arrows button:hover {
+      background: #ff6600;
+    }
+
+    .thumb-arrows i {
+  font-size: 20px;
+}
+
 
     @keyframes zoomOutCenter {
   0% { transform: scale(1.2); opacity: 0; }
@@ -209,63 +230,63 @@
 
   <!-- Slider -->
   <div class="slider">
-    <div class="slide active" style="background-image: url('./Images/Call\ of\ Duty.jpeg');">
+    <div class="slide active" style="background-image: url('https://res.cloudinary.com/do56ewrz9/image/upload/v1761684243/Call_of_Duty_x4tgvd.jpg');">
       <div class="content">
         <h1>Call Of Duty</h1>
         <p>Enter the Ultimate Arena of Modern CombatAnswer the call and step into the world's premier first-person shooter franchise. Call of Duty delivers the most intense, cinematic, and action-packed combat experiences across iconic single-player campaigns, groundbreaking multiplayer, and thrilling cooperative modes.From the battlefields of World War II to the cutting-edge warfare of the future, become the tip of the spear in a globe-trotting conflict. Engage in visceral firefights, utilize advanced technology, and fight alongside memorable characters in a blockbuster narrative.</p>
         <button>See More</button>
       </div>
     </div>
-    <div class="slide" style="background-image: url('./Images/Assassins\ Creed\ 3\ Remasterd.jpeg');">
+    <div class="slide" style="background-image: url('https://res.cloudinary.com/do56ewrz9/image/upload/v1761684244/Assassins_Creed_3_Remasterd_g4wlzu.jpg');">
       <div class="content">
         <h1>Assassin's Creed III Remastered</h1>
-        <p>Relive the American Revolution in Stunning DetailStep into the boots of Connor, a Native American Assassin born from the fire of a brutal conflict, in Assassin's Creed III Remastered. This enhanced edition brings the epic story of the American Revolution to life with improved graphics, 4K resolution support, and refined gameplay mechanics.As the colonies rebel against the British Crown, you will fight alongside iconic historical figures like George Washington and Benjamin Franklin in a quest for freedom and justice. From bustling colonial cities to the untamed American frontier, experience a pivotal moment in history through the eyes of a master Assassin.</p>
+        <p>Relive the American Revolution in Stunning DetailStep into the boots of Connor, a Native American Assassin born from the fire of a brutal conflict, in Assassin's Creed III Remastered. This enhanced edition brings the epic story of the American Revolution to life with improved graphics, 4K resolution support, and refined gameplay mechanics.</p>
         <button>See More</button>
       </div>
     </div>
-    <div class="slide" style="background-image: url('./Images/Mortal\ Kombat\ 11.jpg');">
+    <div class="slide" style="background-image: url('https://res.cloudinary.com/do56ewrz9/image/upload/v1761684248/Mortal_Kombat_11_jzxrkm.jpg');">
       <div class="content">
         <h1>Mortal Kombat 11</h1>
         <p>The Ultimate Fighting Experience EvolvesEnter the arena of Mortal Kombat 11, the brutal and visually stunning next chapter in the legendary fighting game franchise. With all-new custom character variations, bone-shattering Fatal Blows, and a deep story that reshapes history itself, MK11 delivers the most personalized and cinematic combat experience yet.The time-god Kronika has decided to reset history, pitting past and present versions of iconic warriors against each other in a conflict that will determine the fate of all realms. Master a diverse roster of classic fighters and new challengers, each with unique styles and devastating moves.</p>
         <button>See More</button>
       </div>
     </div>
-    <div class="slide" style="background-image: url('./Images/Forza\ Horizon\ 5.jpg');">
+    <div class="slide" style="background-image: url('https://res.cloudinary.com/do56ewrz9/image/upload/v1761684248/Forza_Horizon_5_r0lu6p.jpg');">
       <div class="content">
         <h1 style="color: black;">Forza Horizon 5</h1>
         <p style="color: black;">Embark on an Endless Adventure in Vibrant MexicoGet ready for the ultimate Horizon adventure! Forza Horizon 5 takes you to the breathtaking landscapes of Mexico, featuring a world of striking contrast and beauty. Explore living deserts, lush jungles, historic cities, hidden ruins, pristine beaches, vast canyons, and a towering snow-capped volcano.This is your own open-world playground where you can become a Horizon superstar. Discover hundreds of the world's greatest cars and immerse yourself in a rich campaign filled with diverse events and challenges. Create your own fun with the powerful new EventLab tool and share your creations with the community.</p>
         <button>See More</button>
       </div>
     </div>
-    <div class="slide" style="background-image: url('./Images/Assassin\'s\ Creed.jpg');">
+    <div class="slide" style="background-image: url('https://res.cloudinary.com/do56ewrz9/image/upload/v1761684243/Assassin_s_Creed_vprmh5.jpg');">
       <div class="content">
         <h1>Assassin's Creed Origins</h1>
-        <p>Discover the Beginning of the Brotherhood.Journey to Ancient Egypt, a land of majestic pyramids, powerful pharaohs, and forgotten secrets. Assassin's Creed Origins is a stunning action-RPG that redefines the iconic series, taking you to the very genesis of the Assassin's Brotherhood.Uncover the dark mysteries of a lost civilization as you become Bayek, the last of the Medjay. What began as a personal quest for vengeance will spark a revolution that will change the fate of an entire kingdom. Explore the entire Nile River, from lush oases to the bustling city of Alexandria, in a vast and vibrant open world.</p>
+        <p>Discover the Beginning of the Brotherhood.Journey to Ancient Egypt, a land of majestic pyramids, powerful pharaohs, and forgotten secrets. Assassin's Creed Origins is a stunning action-RPG that redefines the iconic series, taking you to the very genesis of the Assassin's Brotherhood.Uncover the dark mysteries of a lost civilization as you become Bayek, the last of the Medjay. </p>
         <button>See More</button>
       </div>
     </div>
-    <div class="slide" style="background-image: url('./Images/Battlefield1.jpg');">
+    <div class="slide" style="background-image: url('https://res.cloudinary.com/do56ewrz9/image/upload/v1761684246/Battlefield1_dwxkld.jpg');">
       <div class="content">
         <h1>Battlefield 1</h1>
         <p>Experience the Dawn of All-Out War.Step into the epic and unforgettable battles of World War I in Battlefield 1. This acclaimed first-person shooter takes you to the Great War, a conflict that shaped the modern world and introduced humanity to the horrors of industrial-scale warfare.From the muddy trenches of France to the scorching deserts of Arabia, fight across massive, dynamic battlefields. Engage in intense team-based combat where strategy and chaos collide. Pilot biplanes in dizzying dogfights, command massive behemoths like the airship, and charge into battle on horseback.</p>
         <button>See More</button>
       </div>
     </div>
-    <div class="slide" style="background-image: url('./Images/Battlefield4.jpg');">
+    <div class="slide" style="background-image: url('https://res.cloudinary.com/do56ewrz9/image/upload/v1761684248/Battlefield4_lp6pw7.jpg');">
       <div class="content">
         <h1 style="color: black;">Battlefield 4</h1>
         <p style="color: black;">Experience the Evolution of Modern WarfareEnter the chaos of all-out war in Battlefield 4, the groundbreaking first-person shooter that defined a generation. Engage in massive 64-player battles where dynamic destruction, cutting-edge vehicles, and intense team-based combat create an unparalleled sandbox experience.As a member of an elite special operations squad known as the "Tombstone," you are thrust into a desperate global conflict sparked by a violent coup. From the sinking skies of Shanghai to the besieged streets of Baku, every moment is a fight for survival in a world on the brink of collapse.</p>
         <button>See More</button>
       </div>
     </div>
-    <div class="slide" style="background-image: url('./Images/GTA\ V.jpg');">
+    <div class="slide" style="background-image: url('https://res.cloudinary.com/do56ewrz9/image/upload/v1761684249/GTA_V_tszgv9.jpg');">
       <div class="content">
         <h1 style="color: black;">Grand Theft Auto V Enhanced Edition</h1>
-        <p style="color: black;">Enter the World of Crime, Chaos, and OpportunityWelcome to Los Santos, a vast and sprawling sun-soaked metropolis in the state of San Andreas. Grand Theft Auto V is a groundbreaking open-world adventure that tells the story of three uniquely different criminals and their perilous string of heists in a world where they can trust nobody, least of all each other.When a young street hustler, a retired bank robber, and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the criminal underworld, the U.S. government, and the entertainment industry, they must pull off a series of dangerous heists to survive. Explore the ultimate online playground with GTA Online, a dynamic and ever-evolving universe where you can create your own criminal empire.</p>
+        <p style="color: black;">Enter the World of Crime, Chaos, and OpportunityWelcome to Los Santos, a vast and sprawling sun-soaked metropolis in the state of San Andreas. Grand Theft Auto V is a groundbreaking open-world adventure that tells the story of three uniquely different criminals and their perilous string of heists in a world where they can trust nobody, least of all each other.</p>
         <button>See More</button>
       </div>
     </div>
-    <div class="slide" style="background-image: url('./Images/Sekiro.jpg');">
+    <div class="slide" style="background-image: url('https://res.cloudinary.com/do56ewrz9/image/upload/v1761684248/Sekiro_m4xsgw.jpg');">
       <div class="content">
         <h1>Sekiro: Shadows Die Twice</h1>
         <p>Become the One-Armed Wolf in a Brutal Journey of Revenge and Redemption.From the creators of Dark Souls and Elden Ring comes Sekiro: Shadows Die Twice, a visually stunning and fiercely challenging action-adventure game set in a reimagined 14th-century Japan.After a brutal attack leaves you defeated and disgraced, you embark on a perilous quest to rescue your master and exact revenge on your arch-enemy. Armed with a katana and a powerful prosthetic arm, you must master the art of lethal swordplay to survive.</p>
@@ -275,21 +296,21 @@
 
     <div class="thumbnail-wrapper">
       <div class="thumbnails">
-        <img src="./Images/Call of Duty.jpeg" data-index="3" class="active">
-        <img src="./Images/Assassins Creed 3 Remasterd.jpeg" data-index="1">
-        <img src="./Images/Mortal Kombat 11.jpg" data-index="2">
-        <img src="./Images/Forza Horizon 5.jpg" data-index="3">
-        <img src="./Images/Assassin's Creed.jpg" data-index="3">
-        <img src="./Images/Battlefield1.jpg" data-index="3">
-        <img src="./Images/Battlefield4.jpg" data-index="3">
-        <img src="./Images/GTA V.jpg" data-index="0">
-        <img src="./Images/Sekiro.jpg" data-index="3">
+        <img src="https://res.cloudinary.com/do56ewrz9/image/upload/v1761684243/Call_of_Duty_x4tgvd.jpg" data-index="3" class="active">
+        <img src="https://res.cloudinary.com/do56ewrz9/image/upload/v1761684244/Assassins_Creed_3_Remasterd_g4wlzu.jpg" data-index="1">
+        <img src="https://res.cloudinary.com/do56ewrz9/image/upload/v1761684248/Mortal_Kombat_11_jzxrkm.jpg" data-index="2">
+        <img src="https://res.cloudinary.com/do56ewrz9/image/upload/v1761684248/Forza_Horizon_5_r0lu6p.jpg" data-index="3">
+        <img src="https://res.cloudinary.com/do56ewrz9/image/upload/v1761684243/Assassin_s_Creed_vprmh5.jpg" data-index="3">
+        <img src="https://res.cloudinary.com/do56ewrz9/image/upload/v1761684246/Battlefield1_dwxkld.jpg" data-index="3">
+        <img src="https://res.cloudinary.com/do56ewrz9/image/upload/v1761684248/Battlefield4_lp6pw7.jpg" data-index="3">
+        <img src="https://res.cloudinary.com/do56ewrz9/image/upload/v1761684249/GTA_V_tszgv9.jpg" data-index="0">
+        <img src="https://res.cloudinary.com/do56ewrz9/image/upload/v1761684248/Sekiro_m4xsgw.jpg" data-index="3">
       </div>
     </div>
 
     <div class="thumb-arrows">
-      <button id="thumbPrev">&#9664;</button> <!-- ◄ -->
-      <button id="thumbNext">&#9654;</button> <!-- ► -->
+      <button id="thumbPrev"><i class="fa-solid fa-chevron-left"></i></button> <!-- ◄ -->
+      <button id="thumbNext"><i class="fa-solid fa-chevron-right"></i></button> <!-- ► -->
     </div>
   </div>
 
